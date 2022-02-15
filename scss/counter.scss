@@ -1,0 +1,100 @@
+@import "./base";
+
+body {
+    font-family: Montserrat;
+}
+
+audio {
+    display: none;
+}
+
+.wrapper {
+    min-height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.content {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.counter {
+    &__value {
+        text-align: center;
+        font-size: 10vh;
+    }
+
+    &__button {
+    }
+}
+
+.btn {
+    margin-left: 2vw;
+    border: 1px solid #000;
+    border-radius: 8px;
+    margin-top: 2vh;
+    padding: 1vh 1.25vw;
+    background-color: rgb(211, 175, 252);
+    font-size: 2.5vh;
+    &:hover {
+        transition: 0.5s;
+        background-color: #000;
+        color: rgb(211, 175, 252);
+    }
+}
+
+.button {
+    &__decrease {
+        margin-left: 0;
+    }
+    &__reset {
+    }
+
+    &__increas {
+    }
+}
+
+.footer {
+    box-shadow: 0px -9px 8px 0px rgba(0, 0, 0, 0.12);
+    height: 8vh;
+    background-color: rgb(211, 175, 252);
+    font-size: 12px;
+    line-height: 8vh;
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    box-shadow: 0px 9px 8px 0px rgba(0, 0, 0, 0.12);
+    height: 8vh;
+    background-color: rgb(211, 175, 252);
+    font-size: 30px;
+    padding: 0 20px;
+    &__logo {
+        line-height: 8vh;
+        letter-spacing: 2.5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        height: 8vh;
+        font-size: 5vw;
+        &__logo {
+            text-align: center;
+            line-height: 8vh;
+            letter-spacing: 2.5px;
+        }
+    }
+}
